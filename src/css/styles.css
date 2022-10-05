@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Chango&family=Gemunu+Libre:wght@200;300;400;500;600;700;800&display=swap");
+
+body {
+  background: url("../images/bg-color.jpeg");
+  background-color: #1b2111;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Gemunu Libre", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Chango", cursive;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.15rem;
+}
+
+.forms > label {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+input,
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+button {
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+button:hover {
+  background-color: #273019;
+  color: #fff;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:disabled {
+  cursor: default;
+}
+
+button:disabled:active {
+  transform: scale(1);
+}
+
+.forest-buttons {
+  background-color: #273019;
+  color: #fff;
+}
+
+.forest-buttons:hover {
+  background-color: hsl(83, 32%, 4%);
+}
+
+.forest-buttons:disabled:hover {
+  background-color: #273019;
+}
+
+.blured-bg {
+  background-color: hsla(0, 0%, 0%, 0.25);
+  backdrop-filter: blur(0.1rem);
+  -webkit-backdrop-filter: blur(0.1rem);
+  color: #fff;
+}
+
+.streched {
+  min-height: 100%;
+}
+
+body > header {
+  padding: 0.5rem 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body > header > p {
+  white-space: nowrap;
+}
+
+body > header > h1 {
+  color: rgb(247, 238, 72);
+  width: 100%;
+}
+
+body > main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+  padding: 40px;
+}
+
+section {
+  border-radius: 0.5rem;
+  letter-spacing: 0.05em;
+  padding: 1rem 2rem;
+}
+
+.forms {
+  padding: 1rem 2rem;
+  min-width: 30rem;
+}
+
+.forms > * {
+  display: block;
+}
+
+h2 {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.forms > button {
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.forms > label {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-weight: 800;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.forms > input {
+  border: 2px solid #1b2111;
+  margin: auto;
+  margin-bottom: 1.25rem;
+  width: 80%;
+}
+
+.user-side-block {
+  min-width: calc(30% - 4rem);
+  margin-right: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-side-block > footer {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #fff;
+  color: #1b2111;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.card > button {
+  margin: 1rem;
+}
+
+.image-frame {
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 8px solid #273019;
+  margin: auto;
+  border-radius: 0.25rem;
+}
+
+.image-frame > img {
+  width: 100%;
+}
+
+.places-block {
+  min-width: calc(70% - 40px - 4rem);
+}
+
+.bookings-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+}
+
+.bookings-list .image-frame {
+  width: 150px;
+  height: 100px;
+  border: 2px solid #273019;
+}
+
+.places-block > footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.places-block > footer > button {
+  margin: 0 1rem;
+}
+
+.all-row {
+  grid-column: 1/-1;
+}
+
+/* ## IMPORTANT STYLES## */
+.errored > input {
+  border-color: red;
+  box-shadow: 0 0 4px #000;
+}
+
+.errored > label {
+  color: red;
+  text-shadow: 0 0 4px #000;
+}
+
+.hidden {
+  display: none;
+}
+
+.booked-place-card > button {
+  margin: 1rem 0;
+}
